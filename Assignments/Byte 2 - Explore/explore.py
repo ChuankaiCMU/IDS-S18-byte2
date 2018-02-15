@@ -11,7 +11,7 @@ import urllib
 import json
 
 # This API key is provided by google as described in the tutorial
-API_KEY = 'AIzaSyBWD2VkD7Rl5eJkzEP9snndRfOTZTaqNrg'
+API_KEY = ''
 
 # This is the table id for the fusion table
 TABLE_ID = '1jDNgu9rG3oHDZxOaroIwzK-XFA30Stqt0g9CZQc_'
