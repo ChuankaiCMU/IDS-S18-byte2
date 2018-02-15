@@ -72,26 +72,25 @@
   -->
   
   <div class="table-responsive">
-    <table class="table table-striped table-hover">
-      <thead class="thead-inverse">
-       <tr id="cols">
-    {% for item in columns %}
-             <th>{{ item }}</th>
-    {% endfor %}
-         </tr>
-        </thead>
-        <tbody id="rows">
-    {% for row in rows %}
-         <tr>
-      {% for datum in row %}
-                <td>{{ datum }} </td>
-      {% endfor %}
-         </tr>
-    {% endfor %}
-        </tbody>
-     </table>
-  </div>
-  
+  <table class="table table-striped table-hover">
+    <thead class="thead-inverse">
+     <tr id="cols">
+{% for item in headers %}
+         <th>{{ item }}</th>
+{% endfor %}
+     </tr>
+    </thead>
+    <tbody id="rows">
+{% for row in content %}
+     <tr>
+  {% for datum in row %}
+            <td>{{ datum }} </td>
+  {% endfor %}
+     </tr>
+{% endfor %}
+    </tbody>
+   </table>
+</div> 
   
     <!-- Bootstrap core JavaScript
     ================================================== -->
@@ -107,7 +106,6 @@
 		if (str == "") {
 			return;
 		}
-
 	    // find the actual button in this document's HTML
 		button = document.getElementById(str);
 		// for debugging, write its name to the console
