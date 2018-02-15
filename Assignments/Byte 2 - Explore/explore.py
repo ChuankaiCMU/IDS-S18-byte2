@@ -60,3 +60,7 @@ data_df.head()
 x = data_df[u'year']
 y = data_df[u'GDP Amount']
 plt.scatter(x, y)
+
+x = data_df[u'year']
+y = data_df[u'GDP Growth']
+plt.scatter(x, y)
